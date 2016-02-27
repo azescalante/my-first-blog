@@ -7,12 +7,20 @@
 			<h1><em>Cypselas.com</em></h1>
 		</div>
 
+		{% for post in posts %}
+			<div>
+            	<p>published: {{ post.published_date }}</p>
+            	<h1><a href="">{{ post.title }}</a></h1>
+            	<p>{{ post.text|linebreaks }}</p>
+        	</div>
+        {% endfor %}
+
 		<div>
 			<h2>About cypselas</h2>
 			<p>La cipsela es un tipo de fruto muy pequeño que comunmente está acompañado por vilano. Este último es una estructura plumosa en forma de penacho que ayuda a la dispersión aérea de la semilla contenida en la cipsela, como es el caso de los dientes de león, por ejemplo. Esa es la idea de Cypselas.com, que la información aquí contenida pueda ser divulgada de una manera sencilla, como si cada artículo fuese una semilla dentro de una cipsela, y ustedes, el vilano.</p>
 			<p>Published: 2016-02-27, 15:20:53</p>
 		</div>
-
+        
 
 	</body>
 </html>
